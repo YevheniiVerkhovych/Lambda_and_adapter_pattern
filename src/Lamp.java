@@ -1,5 +1,11 @@
-public class Lamp {
+public class Lamp implements ElectricityConsumer {
+
     public void lightOn() {
-        System.out.println("Lamo is ON!");
+        System.out.println("Lamp is ON!");
+    }
+
+    @Override
+    public void electricityOn() {
+        lightOn();
     }
 }
