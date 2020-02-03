@@ -1,4 +1,8 @@
 public class Main {
+
+    public static void fire(Object sender){
+        System.out.println("Fire");
+    }
     public static void main(String[] args) {
 
         Switcher switcher = new Switcher();
@@ -8,9 +12,13 @@ public class Main {
         // event subscribe
         switcher.addElectricityListener(lamp);
         switcher.addElectricityListener(radio);
+        String message = "Fire_3";
 
+        switcher.addElectricityListener(sender-> {
+            System.out.println(message);
+        });
 
-        switcher.addElectricityListener(sender->System.out.println("Fire_1!!!"));
+        switcher.addElectricityListener(Main::fire );
 
         switcher.switchOn();
 
