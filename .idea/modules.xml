@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Lambda_and_adapter_pattern.iml" filepath="$PROJECT_DIR$/Lambda_and_adapter_pattern.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lambda_and_event_subscribe_pattern.iml" filepath="$PROJECT_DIR$/Lambda_and_event_subscribe_pattern.iml" />
     </modules>
   </component>
 </project>
