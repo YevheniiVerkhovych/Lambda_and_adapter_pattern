@@ -5,7 +5,7 @@ public class Radio implements ElectricityConsumer{
     }
 
     @Override
-    public void electricityOn() {
+    public void electricityOn(Object sender) {
         radioOn();
     }
 }

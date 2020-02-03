@@ -10,11 +10,7 @@ public class Main {
         switcher.addElectricityListener(radio);
 
 
-        switcher.addElectricityListener(
-                ()->System.out.println("Fire!!!")
-        );
-
-
+        switcher.addElectricityListener(sender->System.out.println("Fire_1!!!"));
 
         switcher.switchOn();
 

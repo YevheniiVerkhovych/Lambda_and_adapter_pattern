@@ -1,4 +1,4 @@
 @FunctionalInterface
 public interface ElectricityConsumer {
-    void electricityOn();
+    void electricityOn(Object sender);
 }

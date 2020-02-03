@@ -16,6 +16,6 @@ public class Switcher {
     public void switchOn(){
         System.out.println("Switch is ON!");
         for (ElectricityConsumer consumer: listeners) {
-            consumer.electricityOn();}
+            consumer.electricityOn(this);}
     }
 }
