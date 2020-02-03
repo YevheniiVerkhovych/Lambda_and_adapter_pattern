@@ -8,12 +8,15 @@ public class Main {
         // event subscribe
         switcher.addElectricityListener(lamp);
         switcher.addElectricityListener(radio);
-        switcher.addElectricityListener(lamp);
+
+
+        switcher.addElectricityListener(
+                ()->System.out.println("Fire!!!")
+        );
+
+
 
         switcher.switchOn();
 
-        switcher.removeElectricityConsumer(lamp);
-
-        switcher.switchOn();
     }
 }
